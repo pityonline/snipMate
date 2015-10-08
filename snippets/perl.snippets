@@ -1,7 +1,43 @@
-# #!/usr/bin/perl
+# shebang
 snippet #!
-	#!/usr/bin/perl
-	
+	#!/usr/bin/env perl
+
+	use strict;
+	use warnings;
+	use utf8;
+	use Smart::Comments;
+
+	use feature 'say';
+
+# Pod
+snippet pod
+
+	__END__
+
+	=pod
+
+	=encoding UTF-8
+
+	=head1 NAME
+
+	=head1 SYNOPSIS
+
+	=head1 DESCRIPTION
+
+	=over 2
+
+	=item B<>
+
+	=item B<>
+
+	=back
+
+	=head1 BUGS/TODO
+
+	=head1 AUTHOR
+
+	=cut
+
 # Hash Pointer
 snippet .
 	 =>
