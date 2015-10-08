@@ -1,7 +1,18 @@
-# #!/bin/bash
+# shebang
 snippet #!
 	#!/bin/bash
-	
+
+# desc
+snippet doc
+	# Author: ${1:name} <${2:email}>
+	# Description: ${3:description}
+
+# usage
+snippet usage
+	usage() {
+		${1:usage}
+	}
+
 snippet if
 	if [[ ${1:condition} ]]; then
 		${2:#statements}
@@ -26,3 +37,7 @@ snippet case
 		${2:pattern})
 			${3};;
 	esac
+snippet func
+	${1:#name}() {
+		${2:#statments}
+	}
